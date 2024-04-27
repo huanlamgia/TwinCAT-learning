@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <GVL Name="GVL" Id="{b2059115-329a-4a6a-9a68-32bdc03437c1}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	
+ mb_Input_Coils    :    ARRAY [0..6] OF BOOL;
+ mb_Output_Coils :    ARRAY [0..8] OF BOOL;
+ Step_Index :   INT;
+ 
+	nState: INT;
+	nBoxCounter: INT;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

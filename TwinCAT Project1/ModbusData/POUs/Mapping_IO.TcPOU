@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="Mapping_IO" Id="{f7a9f8c2-6fee-4d17-99cf-d97c7589b126}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK Mapping_IO
+
+VAR_INPUT
+	StopBlade 			: BOOL := GVL.mb_Input_Coils[0];
+	StartLight  		: BOOL := GVL.mb_Input_Coils[1];
+	ResetLight  		: BOOL := GVL.mb_Input_Coils[2];
+	StopLight 			: BOOL := GVL.mb_Input_Coils[3];
+	Conveyor_Buffer		: BOOL := GVL.mb_Input_Coils[4];
+	Conveyor_Exit		: BOOL := GVL.mb_Input_Coils[5];
+	Emitter 			: BOOL := GVL.mb_Input_Coils[6];
+END_VAR
+
+VAR_OUTPUT
+	Sensor_At_Buffer_Entry			: BOOL := GVL.mb_Output_Coils[0];
+	Sensor_At_Buffer_Exit			: BOOL := GVL.mb_Output_Coils[1];
+	Sensor_At_Exit					: BOOL := GVL.mb_Output_Coils[2];	
+	Button_Start 					: BOOL := GVL.mb_Output_Coils[3];
+	Button_Reset 					: BOOL := GVL.mb_Output_Coils[4];
+	Button_Stop 					: BOOL := GVL.mb_Output_Coils[5];
+	Switch_Auto_Man 				: BOOL := GVL.mb_Output_Coils[6];
+	Switch_EMG 						: BOOL := GVL.mb_Output_Coils[7];
+	FactoryIO_Running 				: BOOL := GVL.mb_Output_Coils[8];
+	FactoryIO_Reset 				: BOOL := GVL.mb_Output_Coils[9];
+END_VAR
+
+VAR
+
+	
+
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[	// READ Inputs
+	Sensor_At_Buffer_Entry	:= GVL.mb_Output_Coils[0];
+	Sensor_At_Buffer_Exit	:= GVL.mb_Output_Coils[1];
+	Sensor_At_Exit			:= GVL.mb_Output_Coils[2];	
+	Button_Start 			:= GVL.mb_Output_Coils[3];
+	Button_Reset 			:= GVL.mb_Output_Coils[4];
+	Button_Stop 			:= GVL.mb_Output_Coils[5];
+	Switch_Auto_Man 		:= GVL.mb_Output_Coils[6];
+	Switch_EMG 				:= GVL.mb_Output_Coils[7];
+	FactoryIO_Running 		:= GVL.mb_Output_Coils[8];
+	FactoryIO_Reset 		:= GVL.mb_Output_Coils[9];
+
+	// Write Inputs
+	GVL.mb_Input_Coils[0] 			:=StopBlade;
+	GVL.mb_Input_Coils[1]   		:=StartLight;
+	GVL.mb_Input_Coils[2]  			:=ResetLight;
+	GVL.mb_Input_Coils[3]			:=StopLight;
+	GVL.mb_Input_Coils[4]			:=Conveyor_Buffer;
+	GVL.mb_Input_Coils[5]			:=Conveyor_Exit	;
+	GVL.mb_Input_Coils[6] 			:=Emitter ;]]></ST>
+    </Implementation>
+    <LineIds Name="Mapping_IO">
+      <LineId Id="52" Count="0" />
+      <LineId Id="71" Count="0" />
+      <LineId Id="53" Count="10" />
+      <LineId Id="65" Count="5" />
+      <LineId Id="9" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

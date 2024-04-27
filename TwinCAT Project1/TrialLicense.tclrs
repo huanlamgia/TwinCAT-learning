@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<TcLicenseInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2011/11/TcLicenseInfo">
+	<LicenseInfo>
+		<SystemId>{40BAF690-090B-5CAA-E697-A10996CC9A3D}</SystemId>
+		<IssueTime>2024-04-26T18:00:00</IssueTime>
+		<ExpireTime>2024-05-04T00:00:00</ExpireTime>
+		<LicenseKey>e8dcf717b514c269fd9a5ab0cb899a007ece00428c00effed20645f19bae578f607aefa05ecc78be71a1827a6d588be54840927d277535538cb3a4f4154e97e9d72171f6107641566d8f4ed7953549f41bffc43083709613d1bb98cef7f01eb098b8bb73c1d6f587a56f3ef2bc3161459c2fac9fcb433ff4ae3eb0f566c6d059cd3c8f0a68aae4ca544ea29fad7665c59b2e83544b6a377ddfe3cd2c684774a7d2d2a23a471b4c81ebe8b4f3950b920ae89f1624837eb6c2200dbb60159093701023b3e9a73e935707042df369d8e14a3d8ec7da68d26f3c111d5445b55b655765034773b6ca5ea9d6b7a2f23300a9689c7015a9f5961878b54f09dd2aee3dc9</LicenseKey>
+		<License>
+			<LicenseId>{3EBB9639-5FF3-42B6-8847-35C70DC013C8}</LicenseId>
+			<Name>TC3 TCP/IP</Name>
+			<OrderNo>TF6310</OrderNo>
+		</License>
+		<License>
+			<LicenseId>{CFAADCFE-0FFE-462F-B1B3-7885B3C645D0}</LicenseId>
+			<Name>TC3 AES70 (OCA)</Name>
+			<OrderNo>TF8810</OrderNo>
+		</License>
+		<License>
+			<LicenseId>{4C256767-E6E6-4AF5-BD68-9F7ABAD0C200}</LicenseId>
+			<Name>TC3 ADS</Name>
+			<OrderNo>TC1000</OrderNo>
+		</License>
+		<License>
+			<LicenseId>{66689887-CCBD-452C-AC9A-039D997C6E66}</LicenseId>
+			<Name>TC3 PLC</Name>
+			<OrderNo>TC1200</OrderNo>
+		</License>
+		<License>
+			<LicenseId>{6952449D-F68C-49A2-ADE4-8639D85B33A4}</LicenseId>
+			<Name>TC3 Modbus-TCP</Name>
+			<OrderNo>TF6250</OrderNo>
+		</License>
+		<License>
+			<LicenseId>{3FF18E97-7754-401B-93FB-70544DE28A13}</LicenseId>
+			<Name>TC3 IO</Name>
+			<OrderNo>TC1100</OrderNo>
+		</License>
+	</LicenseInfo>
+</TcLicenseInfo>
